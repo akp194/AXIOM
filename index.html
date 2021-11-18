@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AXIOM</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/v4-shims.min.css"
+        integrity="sha512-d2SIuQdXVWppQYvhtVg7Q8QrRQPeNjoAx4N0HQzp/UaaHmEbwz5LpSivEjMzUE1H4nX5JNBz1zCIKNlZGShw0A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="/Css/styles.css">
+    <script src="/Js/script.js"></script>
+
+<body>
+    <nav>
+        <span class="header">
+            <img src="/Pictures/brainLogo.png" alt="">
+            <h1>"AXIOM"</h1>
+        </span>
+        <ul>
+            <li><a href="#blogs">Blogs</a></li>
+            <li><a href="#event">Events</a></li>
+            <li><a href="#team">Team</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="body">
+        <section class="intro">
+            <h1>"I think, therfore I am."</h1>
+            <p>A society of philosphical peeps that can discuss anything without any prejudice</p>
+        </section>
+
+        <section class="slider">
+            <span class="left" onclick="swipeleft();"></span>
+            <ul class="slides">
+                <li data-card="1" class="card">
+                    <div class="cardnav">
+                        <span class="topic">About</span>
+                        <i class="fas fa-compress togglescreen" onclick="makeitfull(event);"></i>
+                        <i class="fas fa-expand" onclick="makeitfull(event);"></i>
+                    </div>
+                </li>
+                <li data-card="2" class="card">
+                    <div class="cardnav">
+                        <span class="topic">Contact</span>
+                        <i class="fas fa-compress togglescreen" onclick="makeitfull(event);"></i>
+                        <i class="fas fa-expand" onclick="makeitfull(event);"></i>
+                    </div>
+                </li>
+                <li data-card="3" class="card">
+                    <div class="cardnav">
+                        <span class="topic">Blogs</span>
+                        <i class="fas fa-compress togglescreen" onclick="makeitfull(event);"></i>
+                        <i class="fas fa-expand" onclick="makeitfull(event);"></i>
+                    </div>
+                </li>
+                <li data-card="4" class="card">
+                    <div class="cardnav">
+                        <span class="topic">Events</span>
+                        <i class="fas fa-compress togglescreen" onclick="makeitfull(event);"></i>
+                        <i class="fas fa-expand" onclick="makeitfull(event);"></i>
+                    </div>
+                </li>
+                <li data-card="5" class="card">
+                    <div class="cardnav">
+                        <span class="topic">Team</span>
+                        <i class="fas fa-compress togglescreen" onclick="makeitfull(event);"></i>
+                        <i class="fas fa-expand" onclick="makeitfull(event);"></i>
+                    </div>
+                </li>
+            </ul>
+            <span class="right" onclick="swiperight();"></span>
+        </section>
+    </div>
+
+    <footer>
+        <a href="#">
+            <i class="fa fa-twitter"></i>
+            <span>Twitter</span>
+        </a>
+        <a href="#">
+            <i class="fa fa-instagram"></i>
+            <span>Instagram</span>
+        </a>
+        <a href="#">
+            <i class="fa fa-envelope"></i>
+            <span>Mail</span>
+        </a>
+        <a href="#">
+            <i class="fa fa-github"></i>
+            <span>Github</span>
+        </a>
+    </footer>
+
+</body>
+
+</html>
