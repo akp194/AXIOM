@@ -19,67 +19,66 @@
 
 <body>
     <nav>
-        <span class="header">
+        <a href="#" class="header">
             <img src="Images/brainLogo.png" alt="">
             <h1>"AXIOM"</h1>
-        </span>
+        </a>
+        <button class="fas fa-bars menu"></button>
         <ul>
-            <li><a href="#blogs">Blogs</a></li>
-            <li><a href="#event">Events</a></li>
-            <li><a href="#team">Team</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a data-cardname="blogs" onclick="showontop(event);" href="#blogs">Blogs</a></li>
+            <li><a data-cardname="events" onclick="showontop(event);" href="#event">Events</a></li>
+            <li><a data-cardname="team" onclick="showontop(event);" href="#team">Team</a></li>
+            <li><a data-cardname="about" onclick="showontop(event);" href="#about">About</a></li>
+            <li><a data-cardname="contact" onclick="showontop(event);" href="#contact">Contact</a></li>
         </ul>
     </nav>
 
-    <div class="body">
-        <section class="intro">
-            <h1>"I think, therfore I am."</h1>
-            <p>A society of philosphical peeps that can discuss anything without any prejudice</p>
-        </section>
+    <section class="intro">
+        <h1>"I think, therfore I am."</h1>
+        <p>A society of philosphical peeps that can discuss anything without any prejudice</p>
+    </section>
 
-        <section class="slider">
-            <span class="left" onclick="swipeleft();"></span>
-            <ul class="slides">
-                <li data-card="1" class="card">
-                    <div class="cardnav">
-                        <span class="topic">About</span>
-                        <i class="fas fa-compress togglescreen" onclick="makeitfull(event);"></i>
-                        <i class="fas fa-expand" onclick="makeitfull(event);"></i>
-                    </div>
-                </li>
-                <li data-card="2" class="card">
-                    <div class="cardnav">
-                        <span class="topic">Contact</span>
-                        <i class="fas fa-compress togglescreen" onclick="makeitfull(event);"></i>
-                        <i class="fas fa-expand" onclick="makeitfull(event);"></i>
-                    </div>
-                </li>
-                <li data-card="3" class="card">
-                    <div class="cardnav">
-                        <span class="topic">Blogs</span>
-                        <i class="fas fa-compress togglescreen" onclick="makeitfull(event);"></i>
-                        <i class="fas fa-expand" onclick="makeitfull(event);"></i>
-                    </div>
-                </li>
-                <li data-card="4" class="card">
-                    <div class="cardnav">
-                        <span class="topic">Events</span>
-                        <i class="fas fa-compress togglescreen" onclick="makeitfull(event);"></i>
-                        <i class="fas fa-expand" onclick="makeitfull(event);"></i>
-                    </div>
-                </li>
-                <li data-card="5" class="card">
-                    <div class="cardnav">
-                        <span class="topic">Team</span>
-                        <i class="fas fa-compress togglescreen" onclick="makeitfull(event);"></i>
-                        <i class="fas fa-expand" onclick="makeitfull(event);"></i>
-                    </div>
-                </li>
-            </ul>
-            <span class="right" onclick="swiperight();"></span>
-        </section>
-    </div>
+    <section class="slider" ontouchstart="touchStart(event)" ontouchmove="touchMove(event)" ontouchend="touchEnd()">
+        <span class="left" onclick="swipeleft();"></span>
+        <ul class="slides">
+            <li data-card="1" class="card about">
+                <div class="cardnav">
+                    <span class="topic">About</span>
+                    <i class="fas fa-compress togglescreen" onclick="makeitfull(event);"></i>
+                    <i class="fas fa-expand" onclick="makeitfull(event);"></i>
+                </div>
+            </li>
+            <li data-card="2" class="card contact">
+                <div class="cardnav">
+                    <span class="topic">Contact</span>
+                    <i class="fas fa-compress togglescreen" onclick="makeitfull(event);"></i>
+                    <i class="fas fa-expand" onclick="makeitfull(event);"></i>
+                </div>
+            </li>
+            <li data-card="3" class="card blogs">
+                <div class="cardnav">
+                    <span class="topic">Blogs</span>
+                    <i class="fas fa-compress togglescreen" onclick="makeitfull(event);"></i>
+                    <i class="fas fa-expand" onclick="makeitfull(event);"></i>
+                </div>
+            </li>
+            <li data-card="4" class="card events">
+                <div class="cardnav">
+                    <span class="topic">Events</span>
+                    <i class="fas fa-compress togglescreen" onclick="makeitfull(event);"></i>
+                    <i class="fas fa-expand" onclick="makeitfull(event);"></i>
+                </div>
+            </li>
+            <li data-card="5" class="card team">
+                <div class="cardnav">
+                    <span class="topic">Team</span>
+                    <i class="fas fa-compress togglescreen" onclick="makeitfull(event);"></i>
+                    <i class="fas fa-expand" onclick="makeitfull(event);"></i>
+                </div>
+            </li>
+        </ul>
+        <span class="right" onclick="swiperight();"></span>
+    </section>
 
     <footer>
         <a href="#">
