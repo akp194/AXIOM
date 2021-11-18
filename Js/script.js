@@ -44,11 +44,11 @@ function showontop(event) {
 
 
 function leftswipe() {
-    swipeleft();
+    swiperight();
 }
 
 function rightswipe() {
-    swiperight();
+    swipeleft();
 }
 
 var startingx, startingy, movingx, movingy;
